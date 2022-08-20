@@ -1,4 +1,4 @@
-FILES = ft_strchr ft_strlen ft_putchar ft_putstr ft_putnbr
+FILES = ft_strchr ft_strlen ft_putchar ft_putstr ft_putnbr ft_strcpy ft_strdup
 TARGETS = $(FILES:=.c)
 OBJECTS = $(FILES:=.o)
 CC = gcc
