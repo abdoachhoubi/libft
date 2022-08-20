@@ -15,7 +15,7 @@
    /* ********************************************************************************* */ 
  ```
 
-<h2 align="center"> 42 Cursus - libft<\h2>
+<h2 align="center"> 42 Cursus - libft</h2>
 
 ### Description:
 The aim of this project is to code a C library regrouping usual functions that you'll be allowed to use in all your other projects.
