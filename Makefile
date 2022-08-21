@@ -1,4 +1,4 @@
-FILES = ft_strchr ft_strlen ft_putchar_fd ft_putstr_fd ft_putnbr_fd ft_strlcpy ft_strdup ft_memset ft_bzero ft_memcmp ft_memcpy
+FILES = ft_strchr ft_strlen ft_putchar_fd ft_putstr_fd ft_putnbr_fd ft_strlcpy ft_strdup ft_memset ft_bzero ft_memcmp ft_memcpy ft_memmove  ft_x
 TARGETS = $(FILES:=.c)
 OBJECTS = $(FILES:=.o)
 CC = gcc
