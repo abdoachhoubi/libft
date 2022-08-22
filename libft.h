@@ -8,6 +8,7 @@
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putnbr_fd(int nb, int fd);
+void	ft_putstr_fd(char *str, int fd);
 size_t	ft_strlen(const char *s);
 char	*ft_strchr(char *s, int c);
 size_t	*ft_strlcpy(char *s1, const char *s2, size_t len);
