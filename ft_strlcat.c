@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/08/22 19:38:56 by aachhoub          #+#    #+#             */
+/*   Updated: 2022/08/22 19:59:01 by aachhoub         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-size_t  ft_strlcat(char *s1, const char *s2, size_t size)
+size_t	ft_strlcat(char *s1, const char *s2, size_t size)
 {
-	size_t  s1_len;
-	size_t  s2_len;
-	size_t  i;
-	size_t  j;
+	size_t	s1_len;
+	size_t	s2_len;
+	size_t	i;
+	size_t	j;
 
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);

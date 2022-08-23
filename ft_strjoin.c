@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/08/22 19:36:55 by aachhoub          #+#    #+#             */
+/*   Updated: 2022/08/22 19:55:30 by aachhoub         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int	total_len;
+	int		total_len;
 	char	*str;
 
 	total_len = ft_strlen(s1) + ft_strlen(s2) + 1;
