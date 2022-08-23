@@ -6,7 +6,7 @@
 /*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 12:29:31 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/08/23 12:51:34 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/08/23 12:55:52 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	{
 		*(s1 + i) = *(s2 + i);
 		if (s2[i] == c)
-			return (s1 + i + 1); 
+			return (s1 + i + 1);
 		i++;
 	}
 	return (0);
