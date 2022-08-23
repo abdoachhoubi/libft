@@ -6,7 +6,7 @@
 /*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 19:42:16 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/08/23 20:50:29 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/08/23 22:18:34 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,5 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strsub(const char *s, unsigned int start, size_t len);
 char	*ft_itoa(int nb);
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 #endif
