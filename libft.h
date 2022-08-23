@@ -6,7 +6,7 @@
 /*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 19:42:16 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/08/23 12:14:50 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/08/23 12:48:04 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,5 @@ int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t n);
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 #endif
