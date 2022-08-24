@@ -58,7 +58,7 @@ The aim of this project is to code a C library regrouping usual functions that y
 
 ## 3. Linked Lists Functions (Bonus):
 
-- [ ]  ft_lstnew - create new list.
+- [x]  ft_lstnew - create new list.
 - [ ]  ft_lstsize - count elements of a list.
 - [ ]  ft_lstlast - find last element of list.
 - [ ]  ft_lstadd_back - add new element at end of list.
