@@ -62,7 +62,7 @@ The aim of this project is to code a C library regrouping usual functions that y
 - [x]  ft_strsub - extract substring from string.
 - [ ]  ft_strtrim - trim beginning and end of string with the specified characters.
 - [x]  ft_strjoin - concatenate two strings into a new string (with malloc).
-- [ ]  ft_split - split string, with specified character as delimiter, into an array of strings.
+- [x]  ft_split - split string, with specified character as delimiter, into an array of strings.
 - [x]  ft_strmapi - create new string from modifying string with specified function.
 
 ## 6. Linked Lists Functions:
