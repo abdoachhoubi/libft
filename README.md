@@ -7,7 +7,7 @@
 #    By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/18  by aachhoub                  #+#    #+#              #
-#    Updated: 2022/08/23  by aachhoub                 ###   ########.fr        #
+#    Updated: 2022/08/24  by aachhoub                 ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 ```
@@ -16,7 +16,7 @@
 
 The aim of this project is to code a C library regrouping usual functions that you'll be allowed to use in all your other projects.
 
-## 1. <ctype.h> Functions:
+## 1. libc standard functions (part 1):
 
 - [x]  ft_isascii - test for ASCII character.
 - [x]  ft_isalnum - alphanumeric character test.
@@ -25,14 +25,8 @@ The aim of this project is to code a C library regrouping usual functions that y
 - [x]  ft_isprint - printing character test (space character inclusive).
 - [x]  ft_tolower - upper case to lower case letter conversion.
 - [x]  ft_toupper - lower case to upper case letter conversion.
-
-## 2. <stdlib.h> Functions:
-
 - [x]  ft_atoi - convert ASCII string to integer.
 - [x]  ft_calloc - memory allocation.
-
-## 3. <string.h> Functions:
-
 - [x]  ft_memset - write a byte to a byte string.
 - [x]  ft_memchr - locate byte in byte string.
 - [x]  ft_memcmp - compare byte string.
@@ -47,12 +41,9 @@ The aim of this project is to code a C library regrouping usual functions that y
 - [x]  ft_strdup - save a copy of a string (with malloc).
 - [x]  ft_strlcpy - size-bounded string copying.
 - [x]  ft_strlcat - size-bounded string concatenation.
-
-## 4. <strings.h> Functions:
-
 - [x]  ft_bzero - write zeroes to a byte string.
 
-## 5. Non Standard Functions:
+## 2. Non Standard Functions (Part 2):
 
 - [x]  ft_putchar_fd - output a character to given file.
 - [x]  ft_putstr_fd - output string to given file.
@@ -65,7 +56,7 @@ The aim of this project is to code a C library regrouping usual functions that y
 - [x]  ft_split - split string, with specified character as delimiter, into an array of strings.
 - [x]  ft_strmapi - create new string from modifying string with specified function.
 
-## 6. Linked Lists Functions:
+## 3. Linked Lists Functions (Bonus):
 
 - [ ]  ft_lstnew - create new list.
 - [ ]  ft_lstsize - count elements of a list.
@@ -77,12 +68,12 @@ The aim of this project is to code a C library regrouping usual functions that y
 - [ ]  ft_lstiter - apply function to content of all list's elements.
 - [ ]  ft_lstmap - apply function to content of all list's elements into new list.
 
-## 7. Header and Makefile:
+## 4. Header and Makefile:
 
 - [x]  libft.h
 - [x]  Makefile
 
-## 8. Testing:
+## 5. Testing:
 
 - [ ]  [Libftest](https://github.com/jtoty/Libftest)
 - [ ]  [Libft Unit Test](https://github.com/alelievr/libft-unit-test)
