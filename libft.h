@@ -6,7 +6,7 @@
 /*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 19:42:16 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/08/24 13:58:57 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/08/24 14:24:53 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,4 +50,5 @@ char	*ft_strsub(const char *s, unsigned int start, size_t len);
 char	*ft_itoa(int nb);
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 char	**ft_split(const char *s, char c);
+char	*ft_strtrim(const char *s, char *set);
 #endif
