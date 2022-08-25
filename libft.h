@@ -6,7 +6,7 @@
 /*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 19:42:16 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/08/24 17:15:46 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/08/25 01:13:13 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,11 +53,13 @@ char	**ft_split(const char *s, char c);
 char	*ft_strtrim(const char *s, char *set);
 
 // Linked lists functions (Bonu)
-typedef struct s_list	t_list;
-struct s_list
+typedef struct s_list
 {
-	void	*content;
-	t_list	*next;
-};
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+size_t	ft_lstsize(t_list *lst);
 t_list	*ft_lstnew(void *content);
+t_list	*ft_lstlast(t_list *lst);
+void	ft_lstadd_back(t_list **lst, t_list *new);
 #endif
