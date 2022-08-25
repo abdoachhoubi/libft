@@ -6,16 +6,16 @@
 /*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 21:45:07 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/08/23 21:48:31 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/08/25 05:02:40 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_ilen(int nb)
+int	ft_ilen(long long nb)
 {
-	size_t	size;
-	int		i;
+	size_t		size;
+	long long	i;
 
 	size = 0;
 	if (nb < 0)
@@ -33,7 +33,7 @@ int	ft_ilen(int nb)
 	return (size);
 }
 
-int	ft_sign(int *nb, size_t *size)
+int	ft_sign(long long *nb, size_t *size)
 {
 	if (*nb < 0)
 	{
@@ -63,23 +63,25 @@ char	*ft_strrev(char *str, size_t len)
 
 char	*ft_itoa(int nb)
 {
-	size_t	size;
-	size_t	i;
-	int		sign;
-	char	*a;
+	size_t		size;
+	size_t		i;
+	int			sign;
+	char		*a;
+	long long	n;
 
+	n = nb;
 	i = 0;
-	size = ft_ilen(nb);
+	size = ft_ilen(n);
 	a = (char *)malloc((size + 1) * sizeof(char));
 	if (!a)
 		return (0);
-	sign = ft_sign(&nb, &size);
-	if (nb == 0)
+	sign = ft_sign(&n, &size);
+	if (n == 0)
 		a[i++] = '0';
 	while (i < size)
 	{
-		a[i++] = (nb % 10) + 48;
-		nb /= 10;
+		a[i++] = (n % 10) + 48;
+		n /= 10;
 	}
 	if (sign == -1)
 		a[i++] = '-';
