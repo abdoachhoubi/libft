@@ -6,7 +6,7 @@
 /*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/24 14:09:15 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/08/24 15:57:58 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/08/25 14:16:49 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,5 @@ char	*ft_strtrim(const char *s, char *set)
 		len = 0;
 	else
 		len = j - i + 1;
-	return (ft_strsub(s, i, len));
+	return (ft_substr(s, i, len));
 }
