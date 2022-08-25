@@ -6,7 +6,7 @@
 /*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/24 00:35:37 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/08/24 14:00:05 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/08/25 14:18:09 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,64 +15,65 @@
 int	ft_wdcount(const char *s, char c)
 {
 	int	i;
-	int	v;
 	int	count;
 
 	i = 0;
-	v = 1;
 	count = 0;
-	while (s[i] == c)
-		i++;
 	while (s[i] != '\0')
 	{
-		if (v == 1 && s[i + 1] != '\0')
+		if (s[i] == c)
+		{
+			i++;
+		}
+		else
 		{
 			count++;
-			v--;
+			while (s[i] != c && s[i] != '\0')
+			{
+				i++;
+			}
 		}
-		if (s[i] == c && s[i + 1] != c)
-		{
-			v++;
-		}
-		i++;
 	}
 	return (count);
-}
-
-int	ft_strsublen(const char *s, char c, int **x, int *j)
-{
-	int	len;
-
-	len = 0;
-	while (s[**x] == c)
-		**x = **x + 1;
-	*j = **x;
-	while (s[**x] != c && s[**x] != '\0')
-	{
-		len++;
-		**x = **x + 1;
-	}
-	return (len);
 }
 
 char	*ft_strxdup(const char *s, char c, int *x)
 {
 	int		len;
 	int		i;
-	int		j;
 	char	*str;
 
-	i = 0;
-	len = ft_strsublen(s, c, &x, &j);
-	str = (char *)malloc(len * sizeof(char));
+	len = 0;
+	while (s[*x] == c)
+		*x = *x + 1;
+	i = *x;
+	while (s[i] != '\0' && s[i] != c)
+	{
+		len++;
+		i++;
+	}
+	str = (char *)malloc((len + 1) * sizeof(char));
 	if (!str)
 		return (0);
-	while (i < len)
+	i = 0;
+	while (s[*x] != '\0' && s[*x] != c)
 	{
-		str[i++] = s[j++];
+		str[i++] = s[*x];
+		*x = *x + 1;
 	}
 	str[i] = '\0';
 	return (str);
+}
+
+char	**ft_handle_err(char **strs)
+{
+	size_t	i;
+
+	i = 0;
+	while (strs[i])
+		free(strs[i++]);
+	free(strs);
+	return (NULL);
 }
 
 char	**ft_split(const char *s, char c)
@@ -86,13 +87,16 @@ char	**ft_split(const char *s, char c)
 	if (!s)
 		return (0);
 	len = ft_wdcount(s, c);
-	strs = (char **)malloc(len * sizeof(char *));
+	strs = (char **)malloc((len + 1) * sizeof(char *));
 	if (!strs)
 		return (0);
 	while (i < len)
 	{
 		strs[i] = ft_strxdup(s, c, &x);
+		if (!strs[i])
+			return (ft_handle_err(strs));
 		i++;
 	}
+	strs[i] = 0;
 	return (strs);
 }
