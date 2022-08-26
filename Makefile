@@ -6,7 +6,7 @@
 #    By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/22 19:42:36 by aachhoub          #+#    #+#              #
-#    Updated: 2022/08/25 11:42:39 by aachhoub         ###   ########.fr        #
+#    Updated: 2022/08/26 12:46:36 by aachhoub         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRC = ft_strchr ft_strlen ft_putchar_fd \
       ft_isprint ft_toupper ft_tolower ft_atoi \
       ft_calloc ft_strjoin ft_strnstr ft_memccpy \
       ft_memchr ft_strncmp ft_substr ft_itoa \
-      ft_strmapi ft_split ft_strtrim
+      ft_strmapi ft_split ft_strtrim ft_strrchr
 BSRC = ft_lstnew ft_lstsize ft_lstlast ft_lstadd_back
 OBJ = $(SRC:=.o)
 BOBJ = $(BSRC:=.o)

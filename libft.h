@@ -6,7 +6,7 @@
 /*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 19:42:16 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/08/25 14:17:11 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/08/26 12:46:14 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	ft_putstr_fd(char *str, int fd);
 void	ft_putendl_fd(char *str, int fd);
 size_t	ft_strlen(const char *s);
 char	*ft_strchr(char *s, int c);
+char	*ft_strrchr(const char *s, int c);
 size_t	ft_strlcpy(char *s1, const char *s2, size_t len);
 size_t	ft_strlcat(char *s1, const char *s2, size_t len);
 char	*ft_strdup(const char *s1);
