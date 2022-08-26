@@ -75,6 +75,4 @@ The aim of this project is to code a C library regrouping usual functions that y
 
 ## 5. Testing:
 
-- [ ]  [Libftest](https://github.com/jtoty/Libftest)
-- [ ]  [Libft Unit Test](https://github.com/alelievr/libft-unit-test)
-- [ ]  [Libft Destructor](https://github.com/t0mm4rx/libftdestructor)
+- [x]  [Libftest (Non official)](https://github.com/abdoachhoubi/libft/blob/main/Tests/README.md)
