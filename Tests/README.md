@@ -2,7 +2,7 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    README.md                                          :+:      :+:    :+:    #
+#    Libftest                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
@@ -11,12 +11,30 @@
 #                                                                              #
 # **************************************************************************** #
 ```
-# Libft Testing
+# Libftest - Testing
+
+Libftest contains script to test libft project. The script will perform the following tests:
+
+- Check if libft.h exists
+- Check norme of libft.h
+- Check if the Makefile file exists
+- Check rules in Makefile
+- Check compilation's flags in Makefile
+- Compile the library
+- Check norme errors
+- Check forbidden functions
+- Testing functions
+
+At the end of the tests, a `deepthought` file will be created, inside which you can find traces of all the results and error/failure messages. You can also see your results and the expected results in `tests` directory.
+
+The script will compile your files with your libft, so you must have your Makefile up to date.
+
+⚠️ **All the tests made are not the official tests** ⚠️
 
 ## Libftest log:
 
-- 2022/08/24: I have performed Libftest on **Part2** and **Part2** functions and everything is **OK :D**
+- 2022/08/24: I have performed Libftest on `Part1 functions` and `Part2 functions` and everything is **OK :D**
 
-Libftest repo and instructions:
+## Source:
 
-[Libftest](https://github.com/jtoty/Libftest)
+Libftest repository and instructions: [Libftest](https://github.com/jtoty/Libftest)
