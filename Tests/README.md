@@ -36,6 +36,9 @@ The script will compile your files with your libft, so you must have your Makefi
 - 2022/08/24: Performed Libftest on `Part1 functions` and `Part2 functions`
 	Result: **OK :D**
 
+- 2022/08/27; Performed Libftest on `Bonus functions`
+	Result: **OK :D**
+
 ## Source:
 
 Libftest repository and instructions: [Libftest](https://github.com/jtoty/Libftest)

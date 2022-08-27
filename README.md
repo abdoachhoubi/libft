@@ -56,7 +56,25 @@ The aim of this project is to code a C library regrouping usual functions that y
 - [x]  ft_split - split string, with specified character as delimiter, into an array of strings.
 - [x]  ft_strmapi - create new string from modifying string with specified function.
 
-## 3. Linked Lists Functions (Bonus):
+## 3. Non Standard Functions (Additional):
+
+- [ ]  ft_putchar
+- [ ]  ft_putnbr
+- [ ]  ft_putstr
+- [ ]  ft_putendl
+- [ ]  ft_striter
+- [ ]  ft_strmap
+- [ ]  ft_striteri
+- [ ]  ft_strmapi
+- [ ]  ft_strnew
+- [ ]  ft_strdel
+- [ ]  ft_strclr
+- [ ]  ft_strequ
+- [ ]  ft_strnequ
+- [ ]  ft_memalloc
+- [ ]  ft_memdel
+
+## 4. Linked Lists Functions (Bonus):
 
 - [x]  ft_lstnew - create new list.
 - [x]  ft_lstsize - count elements of a list.
@@ -65,8 +83,8 @@ The aim of this project is to code a C library regrouping usual functions that y
 - [x]  ft_lstadd_front - add new element at beginning of list.
 - [x]  ft_lstdelone - delete element from list.
 - [x]  ft_lstclear - delete sequence of elements of list from a starting point.
-- [ ]  ft_lstiter - apply function to content of all list's elements.
-- [ ]  ft_lstmap - apply function to content of all list's elements into new list.
+- [x]  ft_lstiter - apply function to content of all list's elements.
+- [x]  ft_lstmap - apply function to content of all list's elements into new list.
 
 ## 4. Header and Makefile:
 
