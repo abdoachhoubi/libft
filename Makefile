@@ -6,7 +6,7 @@
 #    By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/22 19:42:36 by aachhoub          #+#    #+#              #
-#    Updated: 2022/08/27 02:48:46 by aachhoub         ###   ########.fr        #
+#    Updated: 2022/08/27 03:32:07 by aachhoub         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC = ft_strchr ft_strlen ft_putchar_fd \
       ft_memchr ft_strncmp ft_substr ft_itoa \
       ft_strmapi ft_split ft_strtrim ft_strrchr
 BSRC = ft_lstnew ft_lstsize ft_lstlast ft_lstadd_back \
-       ft_lstadd_front
+       ft_lstadd_front ft_lstdelone ft_lstclear
 OBJ = $(SRC:=.o)
 BOBJ = $(BSRC:=.o)
 INC = libft.h
