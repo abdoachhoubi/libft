@@ -7,7 +7,7 @@
 #    By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/24 00:00:00 by aachhoub          #+#    #+#              #
-#    Updated: 2022/08/24 00:00:00 by aachhoub         ###   ########.fr        #
+#    Updated: 2022/08/27 00:00:00 by aachhoub         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 ```
@@ -36,7 +36,13 @@ The script will compile your files with your libft, so you must have your Makefi
 - 2022/08/24: Performed Libftest on `Part1 functions` and `Part2 functions`
 	Result: **OK :D**
 
-- 2022/08/27; Performed Libftest on `Bonus functions`
+- 2022/08/27: Performed Libftest on `Bonus functions`
+	Result: **OK :D**
+
+- 2022/08/27: Performed Libftest on `Additional functions`
+	Result: **OK :D**
+
+- 2022/08/27: Performed Libftest on everything
 	Result: **OK :D**
 
 ## Source:

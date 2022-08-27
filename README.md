@@ -58,21 +58,14 @@ The aim of this project is to code a C library regrouping usual functions that y
 
 ## 3. Non Standard Functions (Additional):
 
-- [ ]  ft_putchar
-- [ ]  ft_putnbr
-- [ ]  ft_putstr
-- [ ]  ft_putendl
-- [ ]  ft_striter
-- [ ]  ft_strmap
-- [ ]  ft_striteri
-- [ ]  ft_strmapi
-- [ ]  ft_strnew
-- [ ]  ft_strdel
-- [ ]  ft_strclr
-- [ ]  ft_strequ
-- [ ]  ft_strnequ
-- [ ]  ft_memalloc
-- [ ]  ft_memdel
+- [x]  ft_putchar
+- [x]  ft_putnbr
+- [x]  ft_putstr
+- [x]  ft_putendl
+- [x]  ft_striter
+- [x]  ft_strmap
+- [x]  ft_striteri
+- [x]  ft_strmapi
 
 ## 4. Linked Lists Functions (Bonus):
 
