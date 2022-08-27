@@ -7,7 +7,7 @@
 #    By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/18  by aachhoub                  #+#    #+#              #
-#    Updated: 2022/08/26  by aachhoub                 ###   ########.fr        #
+#    Updated: 2022/08/27  by aachhoub                 ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 ```
@@ -62,7 +62,7 @@ The aim of this project is to code a C library regrouping usual functions that y
 - [x]  ft_lstsize - count elements of a list.
 - [x]  ft_lstlast - find last element of list.
 - [x]  ft_lstadd_back - add new element at end of list.
-- [ ]  ft_lstadd_front - add new element at beginning of list.
+- [x]  ft_lstadd_front - add new element at beginning of list.
 - [ ]  ft_lstdelone - delete element from list.
 - [ ]  ft_lstclear - delete sequence of elements of list from a starting point.
 - [ ]  ft_lstiter - apply function to content of all list's elements.
