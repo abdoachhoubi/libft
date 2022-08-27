@@ -63,8 +63,8 @@ The aim of this project is to code a C library regrouping usual functions that y
 - [x]  ft_lstlast - find last element of list.
 - [x]  ft_lstadd_back - add new element at end of list.
 - [x]  ft_lstadd_front - add new element at beginning of list.
-- [ ]  ft_lstdelone - delete element from list.
-- [ ]  ft_lstclear - delete sequence of elements of list from a starting point.
+- [x]  ft_lstdelone - delete element from list.
+- [x]  ft_lstclear - delete sequence of elements of list from a starting point.
 - [ ]  ft_lstiter - apply function to content of all list's elements.
 - [ ]  ft_lstmap - apply function to content of all list's elements into new list.
 

@@ -33,7 +33,8 @@ The script will compile your files with your libft, so you must have your Makefi
 
 ## Libftest log:
 
-- 2022/08/24: I have performed Libftest on `Part1 functions` and `Part2 functions` and everything is **OK :D**
+- 2022/08/24: Performed Libftest on `Part1 functions` and `Part2 functions`
+	Result: **OK :D**
 
 ## Source:
 
