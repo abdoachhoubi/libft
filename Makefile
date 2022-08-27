@@ -6,7 +6,7 @@
 #    By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/22 19:42:36 by aachhoub          #+#    #+#              #
-#    Updated: 2022/08/27 14:13:49 by aachhoub         ###   ########.fr        #
+#    Updated: 2022/08/27 15:41:37 by aachhoub         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,11 @@ SRC = ft_strchr ft_strlen ft_putchar_fd \
       ft_isprint ft_toupper ft_tolower ft_atoi \
       ft_calloc ft_strjoin ft_strnstr ft_memccpy \
       ft_memchr ft_strncmp ft_substr ft_itoa \
-      ft_strmapi ft_split ft_strtrim ft_strrchr
+      ft_split ft_strtrim ft_strrchr \
+      additional/ft_strmap additional/ft_strmapi \
+      additional/ft_striter additional/ft_striteri \
+      additional/ft_putchar additional/ft_putstr \
+      additional/ft_putnbr additional/ft_putendl
 BSRC = bonus/ft_lstnew bonus/ft_lstsize bonus/ft_lstlast \
        bonus/ft_lstadd_back bonus/ft_lstadd_front \
        bonus/ft_lstdelone bonus/ft_lstclear bonus/ft_lstiter \
