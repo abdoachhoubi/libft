@@ -6,11 +6,11 @@
 /*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/24 17:01:36 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/08/24 17:07:07 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/08/27 13:42:58 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 t_list	*ft_lstnew(void *content)
 {

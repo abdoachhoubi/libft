@@ -1,24 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/27 10:39:43 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/08/27 10:45:50 by aachhoub         ###   ########.fr       */
+/*   Created: 2022/08/27 02:28:49 by aachhoub          #+#    #+#             */
+/*   Updated: 2022/08/27 13:38:33 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (!lst || !f)
-		return ;
-	while (lst)
-	{
-		f(lst -> content);
-		lst = lst -> next;
-	}
+	if (new && lst)
+		new -> next = *lst;
+	if (new)
+		*lst = new;
 }

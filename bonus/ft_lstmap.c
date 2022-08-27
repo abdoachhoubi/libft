@@ -6,11 +6,11 @@
 /*   By: aachhoub <aachhoub@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/27 10:49:27 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/08/27 11:10:12 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/08/27 13:43:38 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
