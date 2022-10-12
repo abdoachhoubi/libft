@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aachhoub <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/10 08:36:16 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/10/10 08:36:29 by aachhoub         ###   ########.fr       */
+/*   Created: 2022/10/12 10:08:08 by aachhoub          #+#    #+#             */
+/*   Updated: 2022/10/12 10:08:09 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (new && lst)
+	if (lst && new)
 		new -> next = *lst;
 	if (new)
 		*lst = new;

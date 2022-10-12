@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aachhoub <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/10 08:41:21 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/10/10 08:41:42 by aachhoub         ###   ########.fr       */
+/*   Created: 2022/10/12 10:08:32 by aachhoub          #+#    #+#             */
+/*   Updated: 2022/10/12 10:10:51 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*temp;
 	t_list	*new;
+	t_list	*temp;
 
 	if (!lst || !f)
 		return (NULL);
 	new = NULL;
 	while (lst)
 	{
-		temp = ft_lstnew(f(lst->content));
+		temp = ft_lstnew(f(lst -> content));
 		if (!temp)
 		{
 			ft_lstclear(&new, del);

@@ -5,8 +5,20 @@
 #                                                     +:+ +:+         +:+      #
 #    By: aachhoub <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/10/12 10:17:45 by aachhoub          #+#    #+#              #
+#    Updated: 2022/10/12 10:17:48 by aachhoub         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: aachhoub <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/10 08:25:43 by aachhoub          #+#    #+#              #
-#    Updated: 2022/10/10 13:17:52 by aachhoub         ###   ########.fr        #
+#    Updated: 2022/10/11 11:12:57 by aachhoub         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,36 +45,21 @@ RM = rm -f
 CC = cc
 FLAGS = -Wall -Wextra -Werror
 
-# Alerts:
-ALERT = echo
-DEFAULT = \033[0m
-GREEN = \033[1;32m
-YELLOW = \033[1;33m
-
 %.o : %.c
-	@$(ALERT) "$(YELLOW)Compiling	$<$(DEFAULT)"
 	@$(CC) $(FLAGS) -c $< -o $@ -I $(INC)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	@$(AR) $(NAME) $(OBJ)
-	@$(ALERT) "$(GREEN)Compiled Successfully ^_^$(DEFAULT)"
 
 bonus: $(NAME) $(BOBJ)
 	@$(AR) $(NAME) $(BOBJ)
-	@$(ALERT) "$(GREEN)Bonus Compiled Successfully ^_^$(DEFAULT)"
+
 clean:
 	@$(RM) $(OBJ) $(BOBJ)
-	@$(ALERT) "$(GREEN)Object files deleted ^_^$(DEFAULT)"
 
 fclean: clean
 	@$(RM) $(NAME)
-	@$(ALERT) "$(GREEN)libft.a deleted ^_^$(DEFAULT)"
 
-re: re_alert fclean all
-
-re_alert:
-	@$(ALERT) "$(YELLOW)Restarting$(DEFAULT)"
-
-.PHONY: clean fclean re bonus
+re: fclean all

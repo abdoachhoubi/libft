@@ -5,22 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aachhoub <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/10 08:37:14 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/10/10 08:37:23 by aachhoub         ###   ########.fr       */
+/*   Created: 2022/10/12 10:06:04 by aachhoub          #+#    #+#             */
+/*   Updated: 2022/10/12 10:14:16 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
-	size_t	size;
+	int		len;
 
-	size = 0;
-	while (lst != NULL)
+	len = 0;
+	while (lst)
 	{
-		size++;
 		lst = lst -> next;
+		len++;
 	}
-	return (size);
+	return (len);
 }
