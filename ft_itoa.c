@@ -6,7 +6,7 @@
 /*   By: aachhoub <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 17:15:07 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/10/08 16:23:33 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/10/13 11:55:38 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static char	*ft_strrev(char *str, size_t len)
 	char	c;
 
 	i = 0;
-	while (i < len - 1 / 2)
+	while (i < len)
 	{
 		c = str[i];
 		str[i] = str[len - 1];
