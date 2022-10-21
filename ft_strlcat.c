@@ -6,7 +6,7 @@
 /*   By: aachhoub <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:53:56 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/10/07 13:49:42 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/10/20 15:11:47 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_strlcat(char *s1, const char *s2, size_t size)
 	size_t	i;
 	size_t	j;
 
+	if (!s1 && size == 0)
+		return (ft_strlen(s2));
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
 	i = 0;

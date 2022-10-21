@@ -6,7 +6,7 @@
 /*   By: aachhoub <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 16:35:23 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/10/08 16:20:15 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/10/18 09:45:28 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*mem;
 
-	if (size == SIZE_MAX || count == SIZE_MAX)
+	if (size * count >= SIZE_MAX)
 		return (NULL);
 	mem = malloc(count * size);
 	if (mem)

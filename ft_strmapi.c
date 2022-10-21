@@ -6,7 +6,7 @@
 /*   By: aachhoub <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 17:31:42 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/10/07 14:22:43 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/10/18 09:20:05 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-	size_t	i;
-	size_t	size;
-	char	*str;
+	unsigned int	i;
+	size_t			size;
+	char			*str;
 
 	if (!s || !f)
 		return (0);

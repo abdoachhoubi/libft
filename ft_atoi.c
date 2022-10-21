@@ -6,7 +6,7 @@
 /*   By: aachhoub <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 15:40:28 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/10/13 13:36:56 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/10/20 16:16:11 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,21 @@ static int	ft_iswspc(int c)
 	return (0);
 }
 
+static int	catch_error(unsigned long long x, int sign)
+{
+	if (x >= 9223372036854775807 && sign == 1)
+		return (-1);
+	else if (x > 9223372036854775807 && sign == -1)
+		return (0);
+	else
+		return ((int)x);
+}
+
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	res;
-	int	sign;
+	int					i;
+	unsigned long long	res;
+	int					sign;
 
 	i = 0;
 	res = 0;
@@ -32,15 +42,13 @@ int	ft_atoi(const char *nptr)
 		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		if (nptr[i] == '-')
+		if (nptr[i++] == '-')
 			sign *= -1;
-		i++;
 	}
 	while (nptr[i] != '\0' && ft_isdigit(nptr[i]) == 1)
 	{
 		res *= 10;
-		res += nptr[i] - 48;
-		i++;
+		res += nptr[i++] - 48;
 	}
-	return (res * sign);
+	return (catch_error(res, sign) * sign);
 }

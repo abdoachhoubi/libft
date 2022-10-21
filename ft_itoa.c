@@ -6,13 +6,13 @@
 /*   By: aachhoub <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 17:15:07 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/10/13 11:55:38 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/10/18 09:50:36 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_ilen(long long nb)
+static int	ft_ilen(long nb)
 {
 	size_t		size;
 	long long	i;
@@ -35,7 +35,7 @@ static int	ft_ilen(long long nb)
 	return (size);
 }
 
-static int	ft_sign(long long *nb, size_t *size)
+static int	ft_sign(long *nb, size_t *size)
 {
 	if (*nb < 0)
 	{
@@ -69,7 +69,7 @@ char	*ft_itoa(int nb)
 	size_t		i;
 	int			sign;
 	char		*a;
-	long long	n;
+	long		n;
 
 	n = nb;
 	i = 0;

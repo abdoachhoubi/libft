@@ -6,7 +6,7 @@
 /*   By: aachhoub <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:36:07 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/10/12 10:12:50 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/10/18 09:54:15 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		ft_memcpy(dest, src, n);
 	else
 	{
-		s1 = (unsigned char *)(dest + (n - 1));
-		s2 = (unsigned char *)(src + (n - 1));
+		s1 = dest + (n - 1);
+		s2 = (unsigned char *)src + (n - 1);
 		while (n--)
 		{
 			*s1-- = *s2--;

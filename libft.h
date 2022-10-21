@@ -6,7 +6,7 @@
 /*   By: aachhoub <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 08:29:34 by aachhoub          #+#    #+#             */
-/*   Updated: 2022/10/12 10:06:22 by aachhoub         ###   ########.fr       */
+/*   Updated: 2022/10/17 20:29:36 by aachhoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_strlcpy(char *s1, const char *s2, size_t len);
 size_t	ft_strlcat(char *s1, const char *s2, size_t len);
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(const char *s1);
-void	*ft_memset(void *s, int c, size_t n);
+void	*ft_memset(void *b, int c, size_t len);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	ft_bzero(void *s, size_t n);
@@ -51,13 +51,7 @@ char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	**ft_split(const char *s, char c);
 char	*ft_strtrim(const char *s, const char *set);
-void	ft_putchar(char c);
-void	ft_putnbr(int n);
-void	ft_putstr(char *s);
-void	ft_putendl(char *s);
-void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
-char	*ft_strmap(const char *s, char (*f)(char));
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 
 // Bonus Part
